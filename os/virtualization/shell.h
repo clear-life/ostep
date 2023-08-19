@@ -13,7 +13,7 @@ void shell()
     {
         close(stdout);
         open("out.txt");
-        exec("ls");
+        exec("cmd");
     }
     else
     {
