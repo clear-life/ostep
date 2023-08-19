@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <fcntl.h>
 #include <sys/wait.h>
 
 int main(int argc, char *argv[])
@@ -19,7 +20,8 @@ int main(int argc, char *argv[])
         execvp(args[0], args);
     }
     else if(rc > 0)
+    {
         int wc = wait(NULL);
-
+    }
     return 0;
 }
