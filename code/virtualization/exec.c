@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     else if(rc > 0)
     {
         int wc = wait(NULL);
-        printf("parent of %d(wc:%d) pid:%d", rc, wc, (int) getpid());
+        printf("parent of %d(wc:%d) pid:%d\n", rc, wc, (int) getpid());
     }
 
     return 0;
