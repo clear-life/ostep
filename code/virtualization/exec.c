@@ -12,8 +12,8 @@ int main(int argc, char *argv[])
         printf("child pid:%d\n", (int) getpid());
 
         char *args[3];
-        args[0] = strdup("wc");
-        args[1] = strdup("exec.c");
+        args[0] = "wc";
+        args[1] = "exec.c";
         args[2] = NULL;
 
         execvp(args[0], args);
