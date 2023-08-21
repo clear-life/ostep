@@ -8,10 +8,8 @@ int main(int argc, char *argv[])
     printf("once pid:%d\n", (int) getpid());
 
     int rc = fork();
-    printf("rc:%d\n", rc);
-
-    printf("test pid:%d\n", (int) getpid());
+    printf("pid:%d rc:%d\n",(int) getpid(), rc);
 
     int wc = wait(NULL);
-    printf("wc:%d\n", wc);
+    printf("pid:%d wc:%d\n",(int) getpid(), wc);
 }
